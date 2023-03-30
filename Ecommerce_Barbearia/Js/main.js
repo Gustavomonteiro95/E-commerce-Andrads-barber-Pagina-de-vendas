@@ -114,23 +114,5 @@ for (var i = 0; i < buttons.length; i++) {
 
 
 
-/*
-  const removeCart = document.querySelector('.cart-remove')
-
-   removeCart.addEventListener("click", 
-   
-    function removeCart (){
-
-    const sectionCart = document.getElementById('cart-content')
-    const img = document.getElementsByTagName('img')
-    const mainDiv = document.getElementsByTagName('div')
-
-    sectionCart.removeChild(img[img.length - 1])
-    sectionCart.removeChild(mainDiv[mainDiv.length - 1])
-    }
-   
-  
-
-*/
 
  
