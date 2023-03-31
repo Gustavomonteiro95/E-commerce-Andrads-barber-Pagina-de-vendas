@@ -95,6 +95,13 @@ section {
   position: relative;
 }
 
+.father-details-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
 .product-box:hover{
   padding: 2px;
   border: 1px solid var(--text-color);
@@ -102,6 +109,15 @@ section {
   box-shadow: 3px 3px 10px 0px #363636;
   cursor: pointer;
 }
+.price-less, .price-more{
+  background-color: transparent;
+  font-size:x-large;
+  border: none;
+  width: 30px;
+  height: 31px;
+  
+}
+
 
 .product-img {
   width: 100%;
@@ -178,11 +194,19 @@ section {
 }
 
 .cart-quantity{
+  margin-bottom: 5px;
   border: 1px solid var(--text-color);
   outline-color: var(--main-color);
-  width: 2.4rem;
+  width: 50px;
+  height: 32px;
   text-align: center;
   font-size: 1rem;
+}
+
+.trash-button{
+  background-color: transparent;
+  border: none;
+  margin-top: 7px;
 }
 
 .cart-remove{

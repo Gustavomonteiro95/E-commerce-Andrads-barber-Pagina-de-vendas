@@ -64,7 +64,7 @@ for (var i = 0; i < buttons.length; i++) {
         cartProduct.innerText = document.querySelector(`.tittle-${itemSelected}`).textContent
         detailBox.appendChild(cartProduct)
 
-        const price = document.createElement('div')
+        const price = document.createElement('p')
         price.className = 'cart-price'
         let priceArray = []
         priceArray = document.querySelector(`.price-${itemSelected}`).textContent
@@ -72,21 +72,47 @@ for (var i = 0; i < buttons.length; i++) {
         detailBox.appendChild(price)
 
 
+        const fatherBoxDetails = document.createElement('div')
+        fatherBoxDetails.className = 'father-details-box'
+        detailBox.appendChild(fatherBoxDetails)
+
+
+        const ajustPrice = document.createElement('div')
+        ajustPrice.className = 'ajust-price'
+
+        const binIcon = document.createElement('div')
+        binIcon.className = 'bin-icon'
+
+
+        const qtdLess = document.createElement('button')
+        qtdLess.textContent = '-'
+        qtdLess.type = 'text'
+        qtdLess.className = 'price-less'
+        qtdLess.onclick = () => {
+          inp.value -= 1
+        }
+        ajustPrice.appendChild(qtdLess)
 
         const inp = document.createElement('input')
-        inp.type = 'number'
-        inp.id = `input-${itemSelected}`
-        inp.value = 1
+        inp.value = 0
         inp.className = 'cart-quantity'
-        price.appendChild(inp)
-        inp.onchange = () => { 
-            console.log('Aumentou')
-            console.log('Diminiu')
-          
+        ajustPrice.appendChild(inp)
+
+      
+        const qtdMore = document.createElement('button')
+        qtdMore.type = 'text'
+        qtdMore.textContent = '+'
+        qtdMore.className = 'price-more'
+        qtdMore.onclick = () => {
+          inp.value ++
         }
+        ajustPrice.appendChild(qtdMore)
+
 
         const buttonIcon = document.createElement('button')
+        buttonIcon.className = 'trash-button'
         const icon = document.createElement('i')
+        
 
         icon.className = 'bx bxs-trash cart-remove'
         buttonIcon.appendChild(icon)
@@ -97,9 +123,11 @@ for (var i = 0; i < buttons.length; i++) {
           listCar.splice(idx,1)
           total -= parseFloat(priceArray.slice(2))
           displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
-          }
-          
-        price.appendChild(buttonIcon)
+          }  
+        binIcon.appendChild(buttonIcon)
+
+        fatherBoxDetails.appendChild(ajustPrice)
+        fatherBoxDetails.appendChild(binIcon)
         sectionCart.append(cartBox)
 
         total += parseFloat(priceArray.slice(2))
