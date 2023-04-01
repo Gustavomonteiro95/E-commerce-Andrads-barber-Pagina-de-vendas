@@ -32,21 +32,17 @@ for (var i = 0; i < buttons.length; i++) {
 }
 
    /* addCart.addEventListener('click', */
-       function addCart () {
-
-      
+  function addCart () { 
       let ex = this.className // Capturando a classe do item clicado (Ex: item1)
       itemSelected = (ex[4]+ex[5]+ex[6]+ex[7]+ex[8]+ex[9])
       
       itemSelected = itemSelected.trim()
 
       if(listCar.find(element => element == itemSelected)){
-        console.log('Este item já foi adicionado ao carrinho!')
+        alert('Este item já foi adicionado ao carrinho!')
         
       } else {
         listCar.push(itemSelected)
-        console.log(listCar)
-      
 
         const sectionCart = document.getElementById('cart-content')
         const cartBox = document.createElement('div')
@@ -89,12 +85,17 @@ for (var i = 0; i < buttons.length; i++) {
         qtdLess.type = 'text'
         qtdLess.className = 'price-less'
         qtdLess.onclick = () => {
-          inp.value -= 1
-        }
+          inp.value --
+       
+          total -= parseFloat(priceArray.slice(2))
+          displayTotal = document.querySelector('.total-price')
+          displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
+        
+      }
         ajustPrice.appendChild(qtdLess)
 
         const inp = document.createElement('input')
-        inp.value = 0
+        inp.value = 1
         inp.className = 'cart-quantity'
         ajustPrice.appendChild(inp)
 
@@ -105,6 +106,9 @@ for (var i = 0; i < buttons.length; i++) {
         qtdMore.className = 'price-more'
         qtdMore.onclick = () => {
           inp.value ++
+          total += parseFloat(priceArray.slice(2))
+          displayTotal = document.querySelector('.total-price')
+          displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
         }
         ajustPrice.appendChild(qtdMore)
 
@@ -121,8 +125,11 @@ for (var i = 0; i < buttons.length; i++) {
           sectionCart.removeChild(cartBox)
           let idx = listCar.indexOf(itemSelected)
           listCar.splice(idx,1)
-          total -= parseFloat(priceArray.slice(2))
+          total -= parseFloat(priceArray.slice(2)) * inp.value
           displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
+          if (listCar.length == 0){
+                cart.classList.remove("active");
+            }
           }  
         binIcon.appendChild(buttonIcon)
 
@@ -136,6 +143,8 @@ for (var i = 0; i < buttons.length; i++) {
         
 
         cart.classList.add("active")
+
+        
       }
   }
 
