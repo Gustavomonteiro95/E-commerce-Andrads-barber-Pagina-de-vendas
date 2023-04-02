@@ -14,6 +14,9 @@
   
 </head>
 <body>
+
+  
+
   <!-- Header-->
   <header>
     <!--Nav-->
@@ -70,7 +73,7 @@
       <h2 class="section-title">Products </h2>
       <!--Content-->
       <div class="search-details">
-        <input type="search" class="search"> </input>
+        <input type="search" class="search" id="search-bar" onkeyup="search_product()" placeholder=""> </input>
         <label for="search"> <i class='bx bx-search-alt-2 bx-md'></i> </label>
       </div>
       <div class="shop-content">
@@ -298,6 +301,9 @@
 
   <!-- Link para o Js-->
     <script src="js/main.js"></script>
+
+    <script src="js/search_products.js"></script>
+    
 
 </body>
 </html>

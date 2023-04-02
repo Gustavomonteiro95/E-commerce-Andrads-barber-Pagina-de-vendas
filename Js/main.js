@@ -11,6 +11,10 @@ let listCar = []
 // Abrir carrinho
 cartIcon.onclick = () => {
   cart.classList.add("active");
+  if (listCar.length == 0){
+    console.log('vazio')
+  }
+  
 };
 
 // Fechar carrinho
