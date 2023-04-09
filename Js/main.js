@@ -48,6 +48,13 @@ for (var i = 0; i < buttons.length; i++) {
       } else {
         listCar.push(itemSelected)
 
+        /* criando o ícone vermelho com a quantidade de itens no carrinho */
+          let quantidadeItem = document.querySelector('.quantity-item');
+          quantidadeItem.innerText = `${listCar.length}`
+        /* ----------------------------------------------------------------*/
+
+        
+
         const sectionCart = document.getElementById('cart-content')
         const cartBox = document.createElement('div')
         cartBox.className = 'cart-box'
@@ -133,7 +140,7 @@ for (var i = 0; i < buttons.length; i++) {
           displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
           if (listCar.length == 0){
                 cart.classList.remove("active");
-            }
+            } 
           }  
         binIcon.appendChild(buttonIcon)
 
@@ -146,10 +153,10 @@ for (var i = 0; i < buttons.length; i++) {
         displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
         
 
-        cart.classList.add("active")
-
-        
-      }
+        cart.classList.add("active");
+            
+       
+        }
   }
 
 
