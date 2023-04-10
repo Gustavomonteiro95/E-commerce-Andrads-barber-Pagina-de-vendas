@@ -22,3 +22,4 @@ function search_product() {
 var inputSearch = document.querySelector('#search-bar')
 inputSearch.addEventListener("search", search_product)
 
+/* Adc comentario para subir pro git */ 

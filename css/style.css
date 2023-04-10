@@ -154,7 +154,8 @@ section {
   padding: 2px;
   border: 1px solid var(--text-color);
   transition: 0.4s;
-  box-shadow: 3px 3px 10px 0px #363636;
+  /*box-shadow: 3px 3px 10px 0px #363636;*/
+  
   cursor: pointer;
 }
 .price-less, .price-more{
@@ -178,6 +179,10 @@ section {
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+}
+
+.quantity-item{
+  color: red;
 }
 
 .price{
@@ -204,7 +209,32 @@ section {
   background: var(--bg-color);
   box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
   transition: 0.3s;
+  max-height: 500px;
+  overflow-y: scroll;
 }
+
+/* Estilização da barra de rolagem carrinho */
+/* Largura da barra de rolagem */
+.cart::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Cor de fundo da barra de rolagem */
+.cart::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+/* Cor do indicador de rolagem */
+.cart::-webkit-scrollbar-thumb {
+  background-color: #6b584d;
+  border-radius: 20px;
+}
+
+/* Cor de fundo quando o indicador de rolagem é acionado */
+.cart::-webkit-scrollbar-thumb:hover {
+  background-color: #3c3128;
+}
+/* --------------------------------------------*/
 
 .cart.active {
   right: 0;
