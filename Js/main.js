@@ -49,8 +49,12 @@ for (var i = 0; i < buttons.length; i++) {
         listCar.push(itemSelected)
 
         /* criando o ícone vermelho com a quantidade de itens no carrinho */
-          let quantidadeItem = document.querySelector('.quantity-item');
-          quantidadeItem.innerText = `${listCar.length}`
+        
+        let quantidadeItem = document.querySelector('.quantity-item');
+          if (listCar.length > 0){
+            quantidadeItem.innerText = `${listCar.length}`
+          } 
+         
         /* ----------------------------------------------------------------*/
 
         
@@ -97,7 +101,18 @@ for (var i = 0; i < buttons.length; i++) {
         qtdLess.className = 'price-less'
         qtdLess.onclick = () => {
           inp.value --
-       
+          if (inp.value == 0){ // Removendo item do carrinho caso a quantidade selciona seja igual a 0
+          sectionCart.removeChild(cartBox)
+          let idx = listCar.indexOf(itemSelected)
+          listCar.splice(idx,1)
+          total -= parseFloat(priceArray.slice(2)) * inp.value
+          displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
+          cart.classList.remove("active");
+          quantidadeItem.innerText = `${listCar.length}`
+          if (listCar.length == 0){
+            quantidadeItem.innerText = ' '
+          }
+          }
           total -= parseFloat(priceArray.slice(2))
           displayTotal = document.querySelector('.total-price')
           displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
@@ -108,9 +123,11 @@ for (var i = 0; i < buttons.length; i++) {
         const inp = document.createElement('input')
         inp.value = 1
         inp.className = 'cart-quantity'
+        inp.min = '1'
         ajustPrice.appendChild(inp)
+        
+        
 
-      
         const qtdMore = document.createElement('button')
         qtdMore.type = 'text'
         qtdMore.textContent = '+'
@@ -138,8 +155,10 @@ for (var i = 0; i < buttons.length; i++) {
           listCar.splice(idx,1)
           total -= parseFloat(priceArray.slice(2)) * inp.value
           displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
+          quantidadeItem.innerText = `${listCar.length}`
           if (listCar.length == 0){
                 cart.classList.remove("active");
+                quantidadeItem.innerText = ' '
             } 
           }  
         binIcon.appendChild(buttonIcon)
@@ -153,8 +172,9 @@ for (var i = 0; i < buttons.length; i++) {
         displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
         
 
-        cart.classList.add("active");
+       // cart.classList.add("active");
             
+       
        
         }
   }
