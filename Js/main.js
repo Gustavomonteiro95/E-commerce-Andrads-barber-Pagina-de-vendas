@@ -24,11 +24,6 @@ closeCart.onclick = () => {
 
 
 
-/* const addCart = document.querySelector('.add-cart') */
-
-let listaCarrinho = ''
-
-
 var buttons = document.querySelectorAll('.add-cart');
 
 for (var i = 0; i < buttons.length; i++) {
@@ -107,10 +102,11 @@ for (var i = 0; i < buttons.length; i++) {
           listCar.splice(idx,1)
           total -= parseFloat(priceArray.slice(2)) * inp.value
           displayTotal.innerText = `R$${total.toFixed(2).replace(".",",")}`
-          cart.classList.remove("active");
+          
           quantidadeItem.innerText = `${listCar.length}`
           if (listCar.length == 0){
             quantidadeItem.innerText = ' '
+            cart.classList.remove("active");
           }
           }
           total -= parseFloat(priceArray.slice(2))

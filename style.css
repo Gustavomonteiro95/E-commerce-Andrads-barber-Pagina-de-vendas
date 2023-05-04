@@ -1,0 +1,12 @@
+.imagem-com-texto {
+  background-image: url(img/capa.PNG);
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px #000;
+  height: 100vh;
+}

@@ -74,14 +74,16 @@ header {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
+  justify-content: space-around;
+  padding: 0px;
+  height: 75px;
 }
 
 .logo {
   font-size: 1.1rem;
   color: var(--text-color);
   font-weight: 400;
+  padding: 0;
 }
 
 #cart-icon {
@@ -106,13 +108,21 @@ header {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 10px;
+
 }
 
 .bx-md{
   cursor:pointer;
   margin-top: 10px;
 }
+
+.filter {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+
 /* Section shop */
 
 section {
