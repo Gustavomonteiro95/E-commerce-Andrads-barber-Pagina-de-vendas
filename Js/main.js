@@ -101,7 +101,7 @@ for (var i = 0; i < buttons.length; i++) {
         qtdLess.className = 'price-less'
         qtdLess.onclick = () => {
           inp.value --
-          if (inp.value == 0){ // Removendo item do carrinho caso a quantidade selciona seja igual a 0
+          if (inp.value == 0){ // Removendo item do carrinho caso a quantidade selecionada seja igual a 0
           sectionCart.removeChild(cartBox)
           let idx = listCar.indexOf(itemSelected)
           listCar.splice(idx,1)
