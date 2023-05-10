@@ -80,16 +80,17 @@
         <input type="search" class="search" id="search-bar" onkeyup="search_product()" placeholder=""> </input>
         <label for="search"> <i class='bx bx-search-alt-2 bx-md'></i> </label>
 
-        <div class="filter">
+        <div class="ordered">
           <label for="filter"> Ordenar por: </label>
           <select name="filter" id="filter">
             <option value="offers">Ofertas</option>
-            <option value="SmallerPrice">Menor Preço</option>
-            <option value="BiggerrPrice">Maior Preço</option>
+            <option value="smallerPrice">Menor Preço</option>
+            <option value="biggerrPrice">Maior Preço</option>
           </select>
          </div>
            
       </div>
+
       <div class="shop-content">
 
         
@@ -98,7 +99,7 @@
             <a>
             <img src="img/Creme_barbear-ForMan_Evoque.PNG" alt="" class="product-img" id="img-item1"> 
             <h2 class="tittle-item1 product-title">Cr de Barbear For Men</h2>
-            <span class="price price-item1">R$18.99</span>
+            <span class="price price-item1" data-preco="18.99" data-oferta="true">R$18.99</span>
             <button><i class='btn-item1 bx bx-shopping-bag add-cart'></i></button>
             </a>
           </div>
@@ -107,21 +108,21 @@
           <div class="product-box">
             <img src="img/Balm De Barba Mar Cítrico Profissional 500ml Viking.PNG" alt="" class="product-img" id="img-item2"> 
             <h2 class="tittle-item2 product-title">Balm de Barba VIKING</h2>
-            <span class="price price-item2">R$25,00</span>
+            <span class="price price-item2" data-preco="25" data-oferta="false">R$25,00</span>
             <button><i class='btn-item2 bx bx-shopping-bag add-cart' ></i> </button>
           </div>
           <!-- Caixa 3-->
           <div class="product-box">
             <img src="img/creme_barbear_importado_vines_vintage_shave_cream_125ml.PNG" alt="" class="product-img" id="img-item3">
             <h2 class="tittle-item3 product-title">Cr de Barbear ENVOKE</h2>
-            <span class="price price-item3">R$29,78</span>
+            <span class="price price-item3" data-preco="29.78" data-oferta="false">R$29,78</span>
             <i class='btn-item3 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 4-->
           <div class="product-box">
             <img src="img/Hobety Kit Vintage Men Loção Pós Barba e Creme Barbear.PNG" alt="" class="product-img" id="img-item4">
             <h2 class="tittle-item4 product-title">Kit Barba VINTAGE MEN</h2>
-            <span class="price price-item4">R$75,90</span>
+            <span class="price price-item4" data-preco="75.9" data-oferta="false">R$75,90</span>
             <i class='btn-item4 bx bx-shopping-bag add-cart'></i>
           </div>
       
@@ -129,182 +130,182 @@
           <div class="product-box">
             <img src="img/Barba_karicia.PNG" alt="" class="product-img" id="img-item5">
             <h2 class="tittle-item5 product-title">Tônico Minoxidil BCB</h2>
-            <span class="price price-item5">R$59,90</span>
+            <span class="price price-item5" data-preco="59.9" data-oferta="false">R$59,90</span>
             <i class='btn-item5 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 6-->
           <div class="product-box">
             <img src="img/Black_pomada.PNG" alt="" class="product-img" id="img-item6">
             <h2 class="tittle-item6 product-title">Pomada Modeladora BLACK</h2>
-            <span class="price price-item6">R$31,29</span>
+            <span class="price price-item6" data-preco="31.29" data-oferta="false">R$31,29</span>
             <i class='btn-item6 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 7-->
           <div class="product-box">
             <img src="img/Kit_viking.PNG" alt="" class="product-img" id="img-item7">
             <h2 class="tittle-item7 product-title">Kit Barba VIKING</h2>
-            <span class="price price-item7">R$89,59</span>
+            <span class="price price-item7" data-preco="89.59" data-oferta="true">R$89,59</span>
             <i class='btn-item7 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 8-->
           <div class="product-box">
             <img src="img/Kit_completo.PNG" alt="" class="product-img" id="img-item8">
             <h2 class="tittle-item8 product-title">Kit Completo VIKING</h2>
-            <span class="price price-item8">R$189,90</span>
+            <span class="price price-item8" data-preco="189.9" data-oferta="true">R$189,90</span>
             <i class='btn-item8 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 9-->
           <div class="product-box">
             <img src="img/Pomada_black.PNG" alt="" class="product-img" id="img-item9">
             <h2 class="tittle-item9 product-title">Pomada Modeladora BLACK</h2>
-            <span class="price price-item9">R$21,59</span>
+            <span class="price price-item9" data-preco="21.59" data-oferta="false">R$21,59</span>
             <i class='btn-item9 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 10-->
           <div class="product-box">
           <img src="img/Pomada_knucklehead.PNG" alt="" class="product-img" id="img-item10">
           <h2 class="tittle-item10 product-title">Pomada Modeladora KnuckleHead</h2>
-          <span class="price price-item10">R$19,90</span>
+          <span class="price price-item10" data-preco="19.9" data-oferta="false">R$19,90</span>
           <i class='btn-item10 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 11-->
           <div class="product-box">
             <img src="img/Minoxidil_Dom_pelo.PNG" alt="" class="product-img" id="img-item11">
             <h2 class="tittle-item11 product-title">Minoxidil DOM PELO</h2>
-            <span class="price price-item11">R$59,90</span>
+            <span class="price price-item11" data-preco="59.9" data-oferta="false">R$59,90</span>
             <i class='btn-item11 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 12-->
           <div class="product-box">
             <img src="img/Minoxidil_kirkland.PNG" alt="" class="product-img" id="img-item12">
             <h2 class="tittle-item12 product-title">Minoxidil Kirkland</h2>
-            <span class="price price-item12">R$75,90</span>
+            <span class="price price-item12" data-preco="75.9" data-oferta="true">R$75,90</span>
             <i class='btn-item12 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 13-->
           <div class="product-box">
             <img src="img/Minoxidil_tonico_barbaro.PNG" alt="" class="product-img" id="img-item13">
             <h2 class="tittle-item13 product-title">Minoxidil Tônico Bárbaro</h2>
-            <span class="price price-item13">R$62,90</span>
+            <span class="price price-item13" data-preco="62.9" data-oferta="false">R$62,90</span>
             <i class='btn-item13 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 14-->
           <div class="product-box">
             <img src="img/herbissimo.PNG" alt="" class="product-img" id="img-item14">
             <h2 class="tittle-item14 product-title">Desodorante Herbíssimo</h2>
-            <span class="price price-item14">R$3,99</span>
+            <span class="price price-item14" data-preco="3.99" data-oferta="true">R$3,99</span>
             <i class='btn-item14 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 15-->
           <div class="product-box">
             <img src="img/Barbeador_masc_laminadesegrunca.PNG" alt="" class="product-img" id="img-item15">
             <h2 class="tittle-item15 product-title">Barbeador com Lâmina de segurança</h2>
-            <span class="price price-item15">R$29,90</span>
+            <span class="price price-item15" data-preco="25" data-oferta="false">R$29,90</span>
             <i class='btn-item15 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 16-->
           <div class="product-box">
             <img src="img/Navalhete.PNG" alt="" class="product-img" id="img-item16">
             <h2 class="tittle-item16 product-title">Navalhete Madeirado</h2>
-            <span class="price price-item16">R$35,90</span>
+            <span class="price price-item16" data-preco="35.9" data-oferta="true">R$35,90</span>
             <i class='btn-item16 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 17-->
           <div class="product-box">
             <img src="img/Navalhete2.PNG" alt="" class="product-img" id="img-item17">
             <h2 class="tittle-item17 product-title">Navalhete Simples</h2>
-            <span class="price price-item17">R$25,00</span>
+            <span class="price price-item17" data-preco="25" data-oferta="false">R$25,00</span>
             <i class='btn-item17 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 18-->
           <div class="product-box">
             <img src="img/Kit_barbeador.PNG" alt="" class="product-img" id="img-item18">
             <h2 class="tittle-item18 product-title">Kit Barbeador</h2>
-            <span class="price price-item18">R$52,90</span>
+            <span class="price price-item18" data-preco="52.9" data-oferta="false">R$52,90</span>
             <i class='btn-item18 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 19-->
           <div class="product-box">
             <img src="img/Kit_barbeador2.PNG" alt="" class="product-img" id="img-item19">
             <h2 class="tittle-item19 product-title">Kit barbeador</h2>
-            <span class="price price-item19">R$49,80</span>
+            <span class="price price-item19" data-preco="49.8" data-oferta="false">R$49,80</span>
             <i class='btn-item19 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 20-->
           <div class="product-box">
             <img src="img/Maquina_barab3.PNG" alt="" class="product-img" id="img-item20">
             <h2 class="tittle-item20 product-title">Máquina de Barba</h2>
-            <span class="price price-item20">R$98,59</span>
+            <span class="price price-item20" data-preco="98.59" data-oferta="false">R$98,59</span>
             <i class='btn-item20 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 21-->
           <div class="product-box">
             <img src="img/Maquina_barba2.PNG" alt="" class="product-img" id="img-item21">
             <h2 class="tittle-item21 product-title">Máquina de barba</h2>
-            <span class="price price-item21">R$62,90</span>
+            <span class="price price-item21" data-preco="62.9" data-oferta="false">R$62,90</span>
             <i class='btn-item21 bx bx-shopping-bag add-cart'></i>
           </div>
         <!-- Caixa 22-->
         <div class="product-box">
           <img src="img/Maquina_cabelo_barba.PNG" alt="" class="product-img" id="img-item22">
           <h2 class="tittle-item22 product-title">Maquina de Barbear</h2>
-          <span class="price price-item22">R$65,00</span>
+          <span class="price price-item22" data-preco="65" data-oferta="true">R$65,00</span>
           <i class='btn-item22 bx bx-shopping-bag add-cart'></i>
         </div>
         <!--Caixa 23-->
         <div class="product-box">
           <img src="img/Maquina_washable.PNG" alt="" class="product-img" id="img-item23">
           <h2 class="tittle-item23 product-title">Aparelho Barbeador</h2>
-          <span class="price price-item23">R$69,90</span>
+          <span class="price price-item23" data-preco="69.9" data-oferta="false">R$69,90</span>
           <i class='btn-item23 bx bx-shopping-bag add-cart'></i>
         </div>
         <!-- Caixa 24-->
         <div class="product-box">
           <img src="img/Chapinha_pente.PNG" alt="" class="product-img" id="img-item24">
           <h2 class="tittle-item24 product-title">pente Modelador</h2>
-          <span class="price price-item24">R$59,39</span>
+          <span class="price price-item24" data-preco="59.39" data-oferta="false">R$59,39</span>
           <i class='btn-item24 bx bx-shopping-bag add-cart'></i>
         </div>
         <!-- Caixa 25-->
           <div class="product-box">
             <img src="img/Gel_million.PNG" alt="" class="product-img" id="img-item25">
             <h2 class="tittle-item25 product-title">Gel one million</h2>
-            <span class="price price-item25">R$19,90</span>
+            <span class="price price-item25" data-preco="19.9" data-oferta="false">R$19,90</span>
             <i class='btn-item25 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 26-->
           <div class="product-box">
             <img src="img/Kit_gel_million.PNG" alt="" class="product-img" id="img-item26">
             <h2 class="tittle-item26 product-title">Kit One Million</h2>
-            <span class="price price-item26">R$75,59</span>
+            <span class="price price-item26" data-preco="75.59" data-oferta="true">R$75,59</span>
             <i class='btn-item26 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 27-->
           <div class="product-box">
             <img src="img/Escova_barbear.PNG" alt="" class="product-img" id="img-item27">
             <h2 class="tittle-item27 product-title">Escova de barbear</h2>
-            <span class="price price-item27">R$21,90</span>
+            <span class="price price-item27" data-preco="21" data-oferta="false">R$21,90</span>
             <i class='btn-item27 bx bx-shopping-bag add-cart'></i>
           </div>
         <!-- Caixa 28-->
         <div class="product-box">
           <img src="img/Escova_barbear_simples.PNG" alt="" class="product-img" id="img-item28">
           <h2 class="tittle-item28 product-title">Escova simples</h2>
-          <span class="price price-item28">R$19,90</span>
+          <span class="price price-item28" data-preco="19.9" data-oferta="true">R$19,90</span>
           <i class='btn-item28 bx bx-shopping-bag add-cart'></i>
         </div>
           <!-- Caixa 29-->
           <div class="product-box">
             <img src="img/Escova_pente_barbear.PNG" alt="" class="product-img" id="img-item29">
             <h2 class="tittle-item29 product-title">Kit barbeador</h2>
-            <span class="price price-item29">R$32,99</span>
+            <span class="price price-item29" data-preco="32.99" data-oferta="false">R$32,99</span>
             <i class='btn-item29 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 30-->
           <div class="product-box">
             <img src="img/Canivete_victorino.PNG" alt="" class="product-img" id="img-item30">
             <h2 class="tittle-item30 product-title">Canivete Victorino</h2>
-            <span class="price price-item30">R$15,19</span>
+            <span class="price price-item30" data-preco="15.19" data-oferta="true">R$15,19</span>
             <i class='btn-item30 bx bx-shopping-bag add-cart'></i>
           </div>
 
@@ -317,6 +318,8 @@
     <script src="js/main.js"></script>
 
     <script src="js/search_products.js"></script>
+
+    <script src="js/filter_product.js"> </script>
     
 
 </body>
