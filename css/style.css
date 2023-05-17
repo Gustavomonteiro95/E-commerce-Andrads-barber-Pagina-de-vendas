@@ -26,6 +26,14 @@ body {
   
 }
 
+
+.img-lenhador {
+  margin-top: 75px;
+  border-radius: 20px 20px 40px 40px; /* ajuste o valor conforme desejado */
+  overflow: hidden; /* necessário para esconder as partes da imagem que ultrapassam os limites arredondados */
+  height: 620px;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
@@ -99,25 +107,39 @@ header {
   font-weight: 400;
 }
 
-.search-details{
+.search-details {
   display: flex;
   justify-content: center;
 }
 
-.ordered{
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+.search-container {
+  position: relative;
 }
-.search{
-  width: 50%;
-  min-width: 200px;
+
+.search {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  padding: 10px 40px 10px 10px; /* Adicionado padding para acomodar o ícone */
   margin-bottom: 10px;
-
 }
+
+.search-icon {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Impede que o ícone seja clicado */
+}
+
+
+
 
 .bx-md{
   cursor:pointer;
