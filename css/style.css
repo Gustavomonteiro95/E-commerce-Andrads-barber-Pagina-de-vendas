@@ -18,21 +18,33 @@
   --text-color: #171427;
   --bg-color: #fff;
 }
-img {
-  width: 100%;
-}
+
 body {
-  color: var(--text-color);
-  
+  color: var(--text-color); 
+}
+
+
+.img-lenhador img {
+  max-width: 100%;
+  height: auto;
+  max-height: 650px;
+  border-radius: 30px;
 }
 
 
 .img-lenhador {
-  margin-top: 75px;
-  border-radius: 20px 20px 40px 40px; /* ajuste o valor conforme desejado */
-  overflow: hidden; /* necessário para esconder as partes da imagem que ultrapassam os limites arredondados */
-  height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
 }
+
+.img-lenhador img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 .container {
   max-width: 1200px;
@@ -40,6 +52,9 @@ body {
   width: 100%;
 }
 
+.ordered{
+  padding-bottom:50px;
+}
 .cart-icon-number{
   display: flex;
   height: 25px;
@@ -155,18 +170,13 @@ header {
 /* Section shop */
 
 section {
-  padding: 4rem 0 3rem;
+  padding: 1rem;
 }
 
 .section-title{
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.shop{
-  margin-top: 2rem;
 }
 
 .shop-content{
@@ -177,8 +187,8 @@ section {
 }
 
 .product-box{
-  width: 250px;
-  height: 380px;
+  width: 220px;
+  height: 420px;
   position: relative;
   margin: auto;
 }
@@ -243,7 +253,7 @@ section {
   position: fixed;
   top: 0;
   right: -130%; /* Esconder a aba de carrinho */
-  width: 350px;
+  width: 300px;
   min-height: 100vh;
   padding: 20px;
   background: var(--bg-color);
@@ -282,7 +292,7 @@ section {
 
 .cart-box{
   display: grid;
-  grid-template-columns: 32% 50% 18%;
+  grid-template-columns: 35% 55%;
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
@@ -290,9 +300,9 @@ section {
 
 .cart-img{
   width: 100px;
-  height: 100px;
+  height: 120px;
   object-fit: contain;
-  padding: 10px; 
+  padding: 5px; 
 }
 
 .detail-box{

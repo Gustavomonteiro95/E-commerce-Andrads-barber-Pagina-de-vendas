@@ -58,6 +58,7 @@ for (var i = 0; i < buttons.length; i++) {
         const cartBox = document.createElement('div')
         cartBox.className = 'cart-box'
         const image = document.createElement('img')
+        image.className = 'cart-img'
         image.src = document.getElementById('img-'+itemSelected).src
         cartBox.appendChild(image)
 
