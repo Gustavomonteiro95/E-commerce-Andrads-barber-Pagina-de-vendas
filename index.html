@@ -9,9 +9,13 @@
   <link rel="stylesheet" href="css/style.css" defer>
   <!--Box icons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
- 
+  <!-- Botstrap -->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
   <!-- Google Fonts -->
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -22,7 +26,7 @@
     <!--Nav-->
     <div class="nav container">
       <!--Home-->
-      <a href="#" class="logo">Andrads Shop</a>
+      <a href="#" class="logox">Andrads Shop</a>
 
       <div class="search-details">
         <div class="search-container">
@@ -83,9 +87,58 @@
   <!-- Shop -->
 
   <div class="img-lenhador">
-    <img src="./img/lenhador.png" alt="">
-  </div>
+   
+    <div id="carousel-controles" class="carousel slide" data-ride="carousel">
 
+      <ol class="carousel-indicators">
+        <li class="active carousel-li" data-target="#carousel-controles" data-slide-to="0"></li>
+        <li data-target="#carousel-controles" data-slide-to="1"></li>
+        <li data-target="#carousel-controles" data-slide-to="2"></li>
+        <li data-target="#carousel-controles" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner"> <!-- Inner -->
+
+        <div class="carousel-item active">
+          <img src="./img/lenhador.png" class="img-fluid">
+          <div class="carousel-caption">
+              <h3 class="caption cap1">Inspire-se na força e elegância do lenhador moderno.</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./img/barber.jpg" class="img-fluid">
+          <div class="carousel-caption">
+            <h3 class="caption cap2">Faça de sua barbearia um refúgio para quem procura fazer Barba, cabelo e bigode.</h3>
+        </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/man.jpg" class="img-fluid">
+          <div class="carousel-caption">
+            <h3 class="caption cap3">Estilo impecável começa pelo corte de cabelo. Mantenha-o com os nossos produtos</h3>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/lenhador2.jpg" class="img-fluid">
+          <div class="carousel-caption">
+            <h3 class="caption cap4">Cuide da sua barba com o espírito dos lenhadores.</h3>
+          </div>
+        </div>
+
+      </div> <!-- End Inner -->
+     
+      <a href="#carousel-controles" class="caurosel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"> </span> 
+      </a>
+      <a href="#carousel-controles" class="caurosel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+      
+    </div>
+
+  </div>
+  
     
 
     <section class="shop container">
@@ -98,7 +151,7 @@
       <!--Content-->
      
       <div class="ordered">
-        <label for="filter"> Ordenar por  </label>
+        <label for="filter"> Ordenar por:  </label>
         <select name="filter" id="filter">
           <option value="offers">Ofertas</option>
           <option value="smallerPrice">Menor Preço</option>
@@ -110,28 +163,29 @@
 
         
           <!-- Caixa 1-->
-          <div class="product-box">
-            <img src="img/Minoxidil_Dom_pelo.PNG" alt="" class="product-img" id="img-item11">
-            <h2 class="tittle-item11 product-title">Minoxidil DOM PELO</h2>
-            <span class="price price-item11" data-preco="59.9" data-oferta="false">R$59,90</span>
-            <i class='btn-item11 bx bx-shopping-bag add-cart'></i>
+          <div class="product-box" >
+            <a>
+            <img src="img/Creme_barbear-ForMan_Evoque.PNG" alt="" class="product-img" id="img-item1"> 
+            <h4 style="background-color: aquamarine;display: inline;">45% OFF</h4>
+            <h2 class="tittle-item1 product-title">Cr de Barbear For Men</h2>
+            <span class="price price-item1" data-preco="18.99" data-oferta="true">R$18.99</span>
+            <button><i class='btn-item1 bx bx-shopping-bag add-cart'></i></button>
+            </a>
           </div>
           
           <!-- Caixa 2-->
           <div class="product-box">
-            <img src="img/Kit_viking.PNG" alt="" class="product-img" id="img-item7">
-            <h4 style="background-color: aquamarine;display: inline;">15% OFF</h4>
-            <h2 class="tittle-item7 product-title">Kit Barba VIKING</h2>
-            <span class="price price-item7" data-preco="89.59" data-oferta="true">R$89,59</span>
-            <i class='btn-item7 bx bx-shopping-bag add-cart'></i>
+            <img src="img/Balm De Barba Mar Cítrico Profissional 500ml Viking.PNG" alt="" class="product-img" id="img-item2"> 
+            <h2 class="tittle-item2 product-title">Balm de Barba VIKING</h2>
+            <span class="price price-item2" data-preco="25" data-oferta="false">R$25,00</span>
+            <button><i class='btn-item2 bx bx-shopping-bag add-cart' ></i> </button>
           </div>
           <!-- Caixa 3-->
           <div class="product-box">
-            <img src="img/Kit_completo.PNG" alt="" class="product-img" id="img-item8">
-            <h4 style="background-color: aquamarine;display: inline;">20% OFF</h4>
-            <h2 class="tittle-item8 product-title">Kit Completo VIKING</h2>
-            <span class="price price-item8" data-preco="189.9" data-oferta="true">R$189,90</span>
-            <i class='btn-item8 bx bx-shopping-bag add-cart'></i>
+            <img src="img/creme_barbear_importado_vines_vintage_shave_cream_125ml.PNG" alt="" class="product-img" id="img-item3">
+            <h2 class="tittle-item3 product-title">Cr de Barbear ENVOKE</h2>
+            <span class="price price-item3" data-preco="29.78" data-oferta="false">R$29,78</span>
+            <i class='btn-item3 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 4-->
           <div class="product-box">
@@ -158,18 +212,20 @@
           </div>
           <!-- Caixa 7-->
           <div class="product-box">
-            <img src="img/Balm De Barba Mar Cítrico Profissional 500ml Viking.PNG" alt="" class="product-img" id="img-item2"> 
-            <h2 class="tittle-item2 product-title">Balm de Barba VIKING</h2>
-            <span class="price price-item2" data-preco="25" data-oferta="false">R$25,00</span>
-            <button><i class='btn-item2 bx bx-shopping-bag add-cart' ></i> </button>
+            <img src="img/Kit_viking.PNG" alt="" class="product-img" id="img-item7">
+            <h4 style="background-color: aquamarine;display: inline;">15% OFF</h4>
+            <h2 class="tittle-item7 product-title">Kit Barba VIKING</h2>
+            <span class="price price-item7" data-preco="89.59" data-oferta="true">R$89,59</span>
+            <i class='btn-item7 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 8-->
-            <div class="product-box">
-              <img src="img/creme_barbear_importado_vines_vintage_shave_cream_125ml.PNG" alt="" class="product-img" id="img-item3">
-              <h2 class="tittle-item3 product-title">Cr de Barbear ENVOKE</h2>
-              <span class="price price-item3" data-preco="29.78" data-oferta="false">R$29,78</span>
-              <i class='btn-item3 bx bx-shopping-bag add-cart'></i>
-            </div>
+          <div class="product-box">
+            <img src="img/Kit_completo.PNG" alt="" class="product-img" id="img-item8">
+            <h4 style="background-color: aquamarine;display: inline;">20% OFF</h4>
+            <h2 class="tittle-item8 product-title">Kit Completo VIKING</h2>
+            <span class="price price-item8" data-preco="189.9" data-oferta="true">R$189,90</span>
+            <i class='btn-item8 bx bx-shopping-bag add-cart'></i>
+          </div>
           <!-- Caixa 9-->
           <div class="product-box">
             <img src="img/Pomada_black.PNG" alt="" class="product-img" id="img-item9">
@@ -179,20 +235,17 @@
           </div>
           <!-- Caixa 10-->
           <div class="product-box">
-            <img src="img/Pomada_knucklehead.PNG" alt="" class="product-img" id="img-item10">
-            <h2 class="tittle-item10 product-title">Pomada Modeladora KnuckleHead</h2>
-            <span class="price price-item10" data-preco="19.9" data-oferta="false">R$19,90</span>
-            <i class='btn-item10 bx bx-shopping-bag add-cart'></i>
+          <img src="img/Pomada_knucklehead.PNG" alt="" class="product-img" id="img-item10">
+          <h2 class="tittle-item10 product-title">Pomada Modeladora KnuckleHead</h2>
+          <span class="price price-item10" data-preco="19.9" data-oferta="false">R$19,90</span>
+          <i class='btn-item10 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 11-->
-          <div class="product-box" >
-            <a>
-            <img src="img/Creme_barbear-ForMan_Evoque.PNG" alt="" class="product-img" id="img-item1"> 
-            <h4 style="background-color: aquamarine;display: inline;">45% OFF</h4>
-            <h2 class="tittle-item1 product-title">Cr de Barbear For Men</h2>
-            <span class="price price-item1" data-preco="18.99" data-oferta="true">R$18.99</span>
-            <button><i class='btn-item1 bx bx-shopping-bag add-cart'></i></button>
-            </a>
+          <div class="product-box">
+            <img src="img/Minoxidil_Dom_pelo.PNG" alt="" class="product-img" id="img-item11">
+            <h2 class="tittle-item11 product-title">Minoxidil DOM PELO</h2>
+            <span class="price price-item11" data-preco="59.9" data-oferta="false">R$59,90</span>
+            <i class='btn-item11 bx bx-shopping-bag add-cart'></i>
           </div>
           <!-- Caixa 12-->
           <div class="product-box">
@@ -347,6 +400,9 @@
 
     <script src="js/filter_product.js"> </script>
     
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
