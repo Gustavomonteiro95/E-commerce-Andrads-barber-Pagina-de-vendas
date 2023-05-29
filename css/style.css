@@ -171,9 +171,6 @@ header {
   pointer-events: none; /* Impede que o ícone seja clicado */
 }
 
-
-
-
 .bx-md{
   cursor:pointer;
   margin-top: 10px;
@@ -226,13 +223,13 @@ section {
   
   cursor: pointer;
 }
+
 .price-less, .price-more{
   background-color: transparent;
   font-size:x-large;
   border: none;
   width: 30px;
   height: 31px;
-  
 }
 
 
@@ -250,7 +247,7 @@ section {
 }
 
 .quantity-item{
-  color: red;
+  color: #fff;
 }
 
 .price{
