@@ -36,7 +36,7 @@ body {
   width: 1904px;
   height: 937px;
   position: relative;
-  background-position: 40% 0%;
+  background-size: cover;
 }
 
 #image2 {
@@ -44,7 +44,7 @@ body {
   width: 1904px;
   height: 937px;
   position: relative;
-  background-position: 40% 0%;
+  background-size: cover;
 }
 
 #image3 {
@@ -52,7 +52,7 @@ body {
   width: 1904px;
   height: 937px;
   position: relative;
-  background-position: 50% 0%;
+  background-size: cover;
 }
 
 #image4 {
@@ -60,7 +60,7 @@ body {
   width: 1904px;
   height: 937px;
   position: relative;
-  background-position: 40% 0%;
+  background-size: cover;
 }
 
 
