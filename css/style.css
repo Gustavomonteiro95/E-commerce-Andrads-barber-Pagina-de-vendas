@@ -33,7 +33,28 @@ body {
 
 #image1 {
   background-image: url('../img/lenhador.png');
-  width: 1902px;
+  width: 1904px;
+  height: 937px;
+  position: relative;
+}
+
+#image2 {
+  background-image: url('../img/barber.jpg');
+  width: 1904px;
+  height: 937px;
+  position: relative;
+}
+
+#image3 {
+  background-image: url('../img/man.jpg');
+  width: 1904px;
+  height: 937px;
+  position: relative;
+}
+
+#image4 {
+  background-image: url('../img/lenhador2.jpg');
+  width: 1904px;
   height: 937px;
   position: relative;
 }
