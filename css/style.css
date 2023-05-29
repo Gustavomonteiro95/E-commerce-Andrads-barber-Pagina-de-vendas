@@ -18,36 +18,26 @@
   --text-color: #171427;
   --bg-color: #fff;
 }
-
+body {
+  color: var(--text-color); 
+}
 
 .caption{
   font-family: 'Abril Fatface' , sans-serif;
-  font-size: 70px;
+  font-size: 80px;
   position: relative;
-  bottom: 10px;
+  bottom: 100px;
   color: #fff;
   position: absolute;
 }
 
-.cap1 {
-  left: 30%;
-  bottom: 200px;
+#image1 {
+  background-image: url('../img/lenhador.png');
+  width: 1902px;
+  height: 937px;
+  position: relative;
 }
 
-.cap2{
-  bottom: 200px;
-  font-size: 60px;
-}
-.cap3 {
-  right: 10%;
-  bottom: 200px;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #000;
-}
-
-.cap4{
-  bottom: 150px;
-}
 
 .carousel-inner{
   position: relative;
@@ -58,13 +48,7 @@
 }
 
 
-.cap4 {
-  margin-bottom: 10%;
-}
 
-body {
-  color: var(--text-color); 
-}
 
 .carousel-indicators > li {
   bottom: 50px;
@@ -75,12 +59,13 @@ body {
   height: 100%;
 }
 
-
+/*
 .img-lenhador {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+*/
 
 .container {
   max-width: 1200px;
