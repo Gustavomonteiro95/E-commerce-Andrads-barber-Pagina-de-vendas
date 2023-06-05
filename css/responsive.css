@@ -38,42 +38,7 @@
   }
 }
 
-@media (min-width: 331px) and (max-width: 475px){
-  #image1{
-    background-image: url(../img/img_responsive/Max_475px/lenhador_475.png);
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
 
-  #image2{
-    background-image: url(../img/img_responsive/Max_475px/barber_475.jpg);
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-
-  #image3{
-    background-image: url(../img/img_responsive/Max_475px/man_475.jpg);
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-
-  #image4{
-    background-image: url(../img/img_responsive/Max_475px/lenhador2_475.jpg);
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-
-  .caption{
-    font-family: 'Abril Fatface' , sans-serif;
-    font-size: 30px;
-    position: relative;
-    color: #fff;
-  }
-}
 
 
 
