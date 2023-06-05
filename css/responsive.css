@@ -1,10 +1,34 @@
-@media (max-width: 280px){
+@media (max-width: 330px){
   #image1{
-    background-image: url(../img/img_responsive/lenhador_r300.jpg);
+    background-image: url(../img/img_responsive/Max_330px/lenhador_330.png);
     position: relative;
     width: 100%;
     height: 100vh;
   }
+
+  #image2{
+    background-image: url(../img/img_responsive/Max_330px/barber_330.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  
+  #image3{
+    background-image: url(../img/img_responsive/Max_330px/man_330.png);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #image4{
+    background-image: url(../img/img_responsive/Max_330px/lenhador2_330.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+
 
   .caption{
     font-family: 'Abril Fatface' , sans-serif;
@@ -14,6 +38,42 @@
   }
 }
 
+@media (min-width: 331px) and (max-width: 475px){
+  #image1{
+    background-image: url(../img/img_responsive/Max_475px/lenhador_475.png);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #image2{
+    background-image: url(../img/img_responsive/Max_475px/barber_475.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #image3{
+    background-image: url(../img/img_responsive/Max_475px/man_475.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #image4{
+    background-image: url(../img/img_responsive/Max_475px/lenhador2_475.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .caption{
+    font-family: 'Abril Fatface' , sans-serif;
+    font-size: 30px;
+    position: relative;
+    color: #fff;
+  }
+}
 
 
 
