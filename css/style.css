@@ -24,69 +24,49 @@ body {
 
 .caption{
   font-family: 'Abril Fatface' , sans-serif;
-  font-size: 80px;
+  font-size: 7vh;
   position: relative;
   bottom: 100px;
   color: #fff;
 }
 
+.carousel-inner{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#image1,
+#image2,
+#image3,
+#image4 {
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
 #image1 {
   background-image: url('../img/lenhador.png');
-  width: 1904px;
-  height: 937px;
-  position: relative;
-  background-size: cover;
 }
 
 #image2 {
   background-image: url('../img/barber.jpg');
-  width: 1904px;
-  height: 937px;
-  position: relative;
-  background-size: cover;
 }
 
 #image3 {
   background-image: url('../img/man.jpg');
-  width: 1904px;
-  height: 937px;
-  position: relative;
-  background-size: cover;
 }
 
 #image4 {
   background-image: url('../img/lenhador2.jpg');
-  width: 1904px;
-  height: 937px;
-  position: relative;
-  background-size: cover;
-}
-
-
-.carousel-inner{
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-height: 1000px;
-  overflow: hidden;
 }
 
 .carousel-indicators > li {
   bottom: 50px;
 }
 
-.img-lenhador img {
-  width: 100%;
-  height: 100%;
-}
-
-/*
-.img-lenhador {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-*/
 
 .container {
   max-width: 1200px;
@@ -140,7 +120,7 @@ header {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0px;
   height: 75px;
 }
