@@ -177,6 +177,12 @@ for (var i = 0; i < buttons.length; i++) {
   }
 
 
+  window.addEventListener('scroll', function() {
+    var header = document.getElementById('header');
+    header.classList.toggle('scroll', window.scrollY > 600);
+  });
+  
+
 
 
 

@@ -20,21 +20,12 @@
 <body>
 
   <!-- Header-->
-  <header>
+  <header id="header">
     <!--Nav-->
     <div class="nav container">
       <!--Home-->
       <a href="#" class="logox">Andrads Shop</a>
-
-      <div class="search-details">
-        <div class="search-container">
-          <input type="search" class="search" id="search-bar" onkeyup="search_product()" placeholder="">
-          <label for="search" class="search-icon">
-            <i class='bx bx-search-alt-2 bx-md'></i>
-          </label>
-        </div>
-      </div>
-      
+ 
 
       <!-- ícone-->
       <div id="cart-icon-number"> 
@@ -129,18 +120,38 @@
     
 
 
-      <h2 class="section-title"> Our Products </h2>
-      <!--Content-->
-     
-      <div class="ordered">
-        <label for="filter"> Ordenar por:  </label>
-        <select name="filter" id="filter">
-          <option value="offers">Ofertas</option>
-          <option value="smallerPrice">Menor Preço</option>
-          <option value="biggerrPrice">Maior Preço</option>
-        </select>
-       </div>
+    <h2 class="section-title"> Our Products </h2>
+      <!--Content
+     <div> 
+      <div class="search-details">
+        <div class="search-container">
+          <input type="search" class="search" id="search-bar" onkeyup="search_product()" placeholder="">
+          <label for="search" class="search-icon">
+            <i class='bx bx-search-alt-2 bx-md'></i>
+          </label>
+        </div>
+      </div>
+     </div>
+    --> 
 
+      <div class="filters">
+        <div class="ordered">
+          <label for="filter"> Ordenar por:  </label>
+          <select name="filter" id="filter">
+            <option value="offers">Ofertas</option>
+            <option value="smallerPrice">Menor Preço</option>
+            <option value="biggerrPrice">Maior Preço</option>
+          </select>  
+        </div>
+
+        <div class="search">
+          <input type="search" id="search-bar" onkeyup="search_product()" placeholder="O que você procura?">
+          <label for="search" class="search-icon">
+            <i class='bx bx-search-alt-2 bx-md'></i>
+          </label>
+        </div>
+      </div>
+     
       <div class="shop-content">
 
         

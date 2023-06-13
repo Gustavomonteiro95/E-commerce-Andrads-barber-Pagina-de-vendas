@@ -45,9 +45,10 @@ body {
 
 .caption{
   font-family: 'Abril Fatface' , sans-serif;
-  font-size: 7vh;
+  font-size: 6vh;
   color: #fff;
   top: 100px;
+  margin: 5px;
 }
 
 
@@ -62,8 +63,17 @@ body {
   width: 100%;
 }
 
-.ordered{
+.filters{
   padding-bottom:50px;
+  display: inline;
+}
+
+.ordered{
+  display: inline;
+}
+
+.search{
+  display: inline;
 }
 .cart-icon-number{
   display: flex;
@@ -94,13 +104,12 @@ body {
 }
 
 
-/* Header */
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* background: url(../img/background_madeira.PNG); */
   box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
   z-index: 100;
 }
@@ -108,10 +117,19 @@ header {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0px;
   height: 75px;
 }
+
+#header{
+  transition: background-color 0.5s ease;
+}
+
+#header.scroll {
+  background-color: #341d08;
+}
+
 
 .logox {
   font-size: 1.1rem;
@@ -154,12 +172,11 @@ header {
   margin-bottom: 10px;
 }
 
+
 .search-icon {
-  color: var(--bg-color);
-  position: absolute;
-  top: 40%;
-  right: 10px;
-  transform: translateY(-50%);
+  color: #000000;
+  position: relative;
+  top: 15px;
   pointer-events: none; /* Impede que o ícone seja clicado */
 }
 
