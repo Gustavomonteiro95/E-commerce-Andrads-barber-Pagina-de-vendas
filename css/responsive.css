@@ -1,16 +1,50 @@
 @media (max-width: 900px){
   #image1{
-    background-image: url(../img/img_responsive/Max_330px/lenhador_330.png);
-    position: relative;
-    width: 100%;
-    height: 100vh;
+    background-image: url(../img/img_responsive/lenhador2_900.png);
   }
 
   .caption{
-    font-family: 'Abril Fatface' , sans-serif;
-    font-size: 20px;
+    font-size: 6vh;
     position: relative;
     color: #fff;
+  }
+}
+
+@media (max-width: 500px){
+  #image1{
+    background-image: url(../img/img_responsive/lenhador2_600.png);
+  }
+
+  .caption{
+    font-size: 5vh;
+    position: relative;
+    color: #fff;
+  }
+
+  .cart{
+    width: 250px;
+  }
+
+
+  .cart::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .cart-img{
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+    padding: 3px; 
+  }
+
+  .cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  .cart-quantity{
+    width: 25px;
+    height: 30px;
   }
 }
 
