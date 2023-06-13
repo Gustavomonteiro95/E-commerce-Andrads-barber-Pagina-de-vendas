@@ -22,46 +22,34 @@ body {
   color: var(--text-color); 
 }
 
-.caption{
-  font-family: 'Abril Fatface' , sans-serif;
-  font-size: 7vh;
-  position: relative;
-  bottom: 100px;
-  color: #fff;
-}
-
 .carousel-inner{
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-#image1,
-#image2,
-#image3,
-#image4 {
+#image1 {
   max-width: 100%;
   height: 100vh;
-  position: relative;
   background-position: center;
   background-size: cover;
-}
-
-#image1 {
-  background-image: url('../img/lenhador.png');
-}
-
-#image2 {
-  background-image: url('../img/barber.jpg');
-}
-
-#image3 {
-  background-image: url('../img/man.jpg');
-}
-
-#image4 {
   background-image: url('../img/lenhador2.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.carousel-caption {
+  text-align: center;
+}
+
+.caption{
+  font-family: 'Abril Fatface' , sans-serif;
+  font-size: 7vh;
+  color: #fff;
+  top: 100px;
+}
+
 
 .carousel-indicators > li {
   bottom: 50px;
