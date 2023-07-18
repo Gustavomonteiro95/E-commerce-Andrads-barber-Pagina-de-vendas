@@ -8,7 +8,7 @@ let total = 0
 let displayTotal = ''
 let listCar = []
 
-// Abrir carrinho
+
 cartIcon.onclick = () => {
   cart.classList.add("active");
   if (listCar.length == 0){
@@ -17,7 +17,7 @@ cartIcon.onclick = () => {
   
 };
 
-// Fechar carrinho
+
 closeCart.onclick = () => {
   cart.classList.remove("active");
 };
