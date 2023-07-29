@@ -49,7 +49,7 @@ body {
   font-weight: 200;
   color: #fff;
   top: 70px;
-  margin: 5px;
+  margin: 15px;
   text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black; /* quatro sombras para criar uma aparência de borda */
   color: white; /* cor do texto */
 }
