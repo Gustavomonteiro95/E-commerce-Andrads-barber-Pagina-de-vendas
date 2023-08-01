@@ -1,6 +1,6 @@
 @media (max-width: 900px){
   #image1{
-    background-image: url(../img/img_responsive/lenhador1_1800_1400.png);
+    background-image: url(../img/img_responsive/lenhador2_2.png);
   }
 
   .caption{
@@ -12,7 +12,7 @@
 
 @media (max-width: 500px){
   #image1{
-    background-image: url(../img/img_responsive/lenhador1_600_680.png);
+    background-image: url(../img/img_responsive/lenhador2_1.png);
   }
 
   .caption{
