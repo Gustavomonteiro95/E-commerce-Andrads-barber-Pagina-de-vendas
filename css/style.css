@@ -421,12 +421,39 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 50px;
-}
-
-.footer_p {
+  gap: 15px;
+  padding: 10px;
   color: #fff;
 }
 
-#foot {
+#foot form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#foot label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#foot input[type="text"],
+#foot input[type="email"],
+#foot textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#foot button[type="submit"] {
+  background-color: #007bff;
   color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
 }
