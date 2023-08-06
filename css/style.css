@@ -421,12 +421,12 @@ footer {
   justify-content: center;
   margin-top: 50px;
   gap: 15px;
-  padding: 10px;
+  padding: 15px;
   color: #fff;
 }
 
 footer > .container_footer{
-  width: 50%;
+  width: 100%;
   display: grid;
   margin: auto;
   align-items: center;
