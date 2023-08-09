@@ -456,6 +456,11 @@ footer > .container_footer{
   cursor: pointer;
 }
 
+.icons_index > i {
+  width: 50px;
+  align-items: center;
+}
+
 .icons_index > i:hover{
   font-size: 40px;
 }
