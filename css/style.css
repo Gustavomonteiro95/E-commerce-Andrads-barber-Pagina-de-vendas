@@ -427,6 +427,7 @@ footer {
 
 footer > .container_footer{
   width: 100%;
+  padding: 20px;
   display: grid;
   margin: auto;
   align-items: center;
@@ -446,9 +447,11 @@ footer > .container_footer{
 
 .icons_index {
   font-size: 30px;
+  display: flex;
   align-items: center;
-  margin: auto;
   justify-content: center;
+  padding: 10px;
+  gap: 10px;
 }
 
 #foot label {
