@@ -444,6 +444,13 @@ footer > .container_footer{
   border-radius: 5px;
 }
 
+.icons_index {
+  font-size: 30px;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+
 #foot label {
   display: block;
   font-weight: bold;
