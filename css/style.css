@@ -33,7 +33,7 @@ body {
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background-image: url('/img/lenhador2.jpg');
+  background-image: url('/img/img_responsive/lenhador2.jpg');
   display: flex;
   align-items: center;
   justify-content: center;
