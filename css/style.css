@@ -465,6 +465,19 @@ footer > .container_footer{
   font-size: 40px;
 }
 
+#send{
+  justify-content: flex-start;
+  display: flex;
+  gap: 15px;
+}
+
+.icon_send {
+  width: 60px;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+}
+
 #foot label {
   display: block;
   font-weight: bold;

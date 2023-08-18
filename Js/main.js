@@ -31,6 +31,7 @@ for (var i = 0; i < buttons.length; i++) {
 }
 
    /* addCart.addEventListener('click', */
+   
   function addCart () { 
       let ex = this.className // Capturando a classe do item clicado (Ex: item1)
       itemSelected = (ex[4]+ex[5]+ex[6]+ex[7]+ex[8]+ex[9])
