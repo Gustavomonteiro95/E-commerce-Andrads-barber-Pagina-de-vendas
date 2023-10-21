@@ -18,6 +18,8 @@ cartIcon.onclick = () => {
 };
 
 
+/* function fechar carrinho -*/
+
 closeCart.onclick = () => {
   cart.classList.remove("active");
 };
