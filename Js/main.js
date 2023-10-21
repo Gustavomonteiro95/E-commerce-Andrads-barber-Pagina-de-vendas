@@ -8,6 +8,7 @@ let total = 0
 let displayTotal = ''
 let listCar = []
 
+/* function para exibir carrinho com o click */ 
 
 cartIcon.onclick = () => {
   cart.classList.add("active");
