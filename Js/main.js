@@ -19,7 +19,7 @@ cartIcon.onclick = () => {
 };
 
 
-/* function fechar carrinho -*/
+/* função fechar carrinho -*/
 
 closeCart.onclick = () => {
   cart.classList.remove("active");
